@@ -1,0 +1,128 @@
+body {
+  margin:0;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1 {
+  margin-top: 0;
+  font-family: 'Indie Flower', cursive;
+  font-size: 70px;
+  text-shadow: 2px 2px 0 white;
+
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+}
+.welcome-wrapper {
+  position: relative;
+  height: 904px;
+  background-color: #9fd3c7;
+  margin:0;
+}
+
+.center-container {
+  text-align: center;
+  padding-top: 300px;
+
+}
+
+.mountain-container {
+  position: absolute;
+  bottom: -5px;
+
+}
+
+.bottom-cloud-container {
+  /* background-color:red; */
+  position: absolute;
+  left: 800px;
+  top: 200px;
+  display: inline-block;
+}
+
+.top-cloud-container {
+  /* background-color: blue; */
+  left: 100px;
+  top: 100px;
+  position: absolute;
+  display: inline-block;
+}
+
+.mountain {
+  width:100%;
+}
+
+
+.top-cloud {
+  opacity: 0;
+  width:300px;
+  height: 200px;
+  position: relative;
+animation-name: floating-fast;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.bottom-cloud {
+  opacity: 0;
+  width:300px;
+  height: 200px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  position: relative;
+  animation-name: floating-slow;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+
+}
+
+.content-wrapper {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.icon {
+  width: 10%;
+}
+
+@-webkit-keyframes floating-fast{
+  0% {opacity: 0; left:0;}
+  25% {opacity: .75; left:225px;}
+  50% {opacity: 1; left:450px;}
+  75% {opacity: .5; left:675px;}
+  100% {opacity: 0; left:900px;}
+}
+
+@keyframes floating-fast {
+  0% {opacity: 0; left:0;}
+  25% {opacity: .75; left:225px;}
+  50% {opacity: 1; left:450px;}
+  75% {opacity: .5; left:675px;}
+  100% {opacity: 0; left:900px;}
+}
+
+@-webkit-keyframes floating-slow {
+  0% {opacity: 0; left:0;}
+  25% {opacity: .5; left:75px;}
+  50% {opacity: 1; left:150px;}
+  75% {opacity: .5; left:225px;}
+  100% {opacity: 0; left:300px;}
+}
+
+@keyframes floating-slow {
+  0% {opacity: 0; left:0;}
+  25% {opacity: .5; left:75px;}
+  50% {opacity: 1; left:150px;}
+  75% {opacity: .5; left:225px;}
+  100% {opacity: 0; left:300px;}
+}
