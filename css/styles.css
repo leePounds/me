@@ -41,14 +41,14 @@ h3{
 .bottom-cloud-container {
   /* background-color:red; */
   position: absolute;
-  left: 800px;
+  right: 200px;
   top: 200px;
   display: inline-block;
 }
 
 .top-cloud-container {
   /* background-color: blue; */
-  left: 100px;
+  left: 200px;
   top: 100px;
   position: absolute;
   display: inline-block;
@@ -96,33 +96,33 @@ animation-name: floating-fast;
 }
 
 @-webkit-keyframes floating-fast{
-  0% {opacity: 0; left:0;}
-  25% {opacity: .75; left:225px;}
-  50% {opacity: 1; left:450px;}
-  75% {opacity: .5; left:675px;}
-  100% {opacity: 0; left:900px;}
+  0% {opacity: 0; right:200px;}
+  25% {opacity: .75; right:150px;}
+  50% {opacity: 1; right:100px;}
+  75% {opacity: .5; right:50px;}
+  100% {opacity: 0; right:0px;}
 }
 
 @keyframes floating-fast {
-  0% {opacity: 0; left:0;}
-  25% {opacity: .75; left:225px;}
-  50% {opacity: 1; left:450px;}
-  75% {opacity: .5; left:675px;}
-  100% {opacity: 0; left:900px;}
+  0% {opacity: 0; right:200px;}
+  25% {opacity: .75; right:150px;}
+  50% {opacity: 1; right:100px;}
+  75% {opacity: .5; right:50px;}
+  100% {opacity: 0; right:0px;}
 }
 
 @-webkit-keyframes floating-slow {
   0% {opacity: 0; left:0;}
-  25% {opacity: .5; left:75px;}
-  50% {opacity: 1; left:150px;}
-  75% {opacity: .5; left:225px;}
-  100% {opacity: 0; left:300px;}
+  25% {opacity: .5; left:25px;}
+  50% {opacity: 1; left:50px;}
+  75% {opacity: .5; left:75px;}
+  100% {opacity: 0; left:100px;}
 }
 
 @keyframes floating-slow {
   0% {opacity: 0; left:0;}
-  25% {opacity: .5; left:75px;}
-  50% {opacity: 1; left:150px;}
-  75% {opacity: .5; left:225px;}
-  100% {opacity: 0; left:300px;}
+  25% {opacity: .5; left:25px;}
+  50% {opacity: 1; left:50px;}
+  75% {opacity: .5; left:75px;}
+  100% {opacity: 0; left:100px;}
 }
